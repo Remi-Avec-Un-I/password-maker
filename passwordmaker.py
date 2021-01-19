@@ -73,14 +73,16 @@ elif type == 3:
 #this will create a random password depend of the liste choice you did in the beginning, and the amount of charactere you choose
 
 else:
-    def main():
-        retry = int(input("You did not choose a good number, would you like to try again?\n[1] Yes\n[2] No\n"))
-        if retry == 1:
+    retry = int(input("You did not choose a good number, would you like to try again?\n[1] Yes\n[2] No\n"))
+    if retry == 1:
+        def main():
             os.startfile("passwordmaker.py")
-        elif retry == 2:
+    elif retry == 2:
+        def main():
             print("Closing...")
             #Close the programme
-        elif retry != 1 or retry != 2:
+    elif retry != 1 or retry != 2:
+        def main():
             close = input("I think you are stupid...")
 
 
